@@ -24,7 +24,7 @@ def test_1():
     except Exception as e:
         result = e
     finally:
-        mode = 'a' if os.path.exists('result_test_1') else 'w'
+        mode = 'a' if os.path.exists('/home/result_test_1') else 'w'
         with open('result_test_1', mode) as f:
             f.write(str(result))
         driver.close()
